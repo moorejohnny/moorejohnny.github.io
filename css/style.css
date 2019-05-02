@@ -16,7 +16,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   top: 0;
   width: 100%;
   height: 100vh;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 400;
   color: #bababa;
   background-color: #ffe6d7;
@@ -484,6 +484,10 @@ a:visited {
 
   img {
     max-width: 100%;
+  }
+
+  .preload {
+    font-size: 50px;
   }
 
   .link:hover {
