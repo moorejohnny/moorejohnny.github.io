@@ -354,6 +354,7 @@ a:hover {
 .inner{
   height: 100%;
   padding-top: 5%;
+  pointer-events: none;
 }
 
 .content {
