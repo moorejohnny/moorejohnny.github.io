@@ -24,7 +24,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s ease;
+  transition: opacity 0.5s ease;
 }
 
 .preload-finish {
@@ -161,6 +161,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   color: #c8739f;
 }
 
+.z {
+  color: #edd96c;
+}
+
 .test-2 {
   font-family: "Times New Roman", Times;
   font-weight: 900;
@@ -285,18 +289,17 @@ div.content {
 
 #navbar {
   overflow: hidden;
-  background-color: #dec5de;
+  background-color: #e0c1e0;
   z-index: 901;
   display: none;
   box-shadow: 0 3px 5px -2px rgba(0,0,0,0.2);
-  /*
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
-  */
+  transition: all 1s;
 }
 
 #navbar a {
   display: block;
   color: #fff;
+  font-weight: bold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -304,15 +307,15 @@ div.content {
 }
 
 #navbar li:hover {
-  background-color: #ddd;
+  background-color: #cca6cc;
   color: #333;
-  transition: 1s ease-out;
+  transition: all 1s ease infinite;
 }
 
-#navbar a:hover {
-  color: #333;
+a:hover {
   transition: 1s ease-out;
   letter-spacing: 2px;
+  transition: 0.5s;
 }
 
 .four, .five, .six, .seven, .eight, .nine {
@@ -379,11 +382,6 @@ a:link {
 
 a:visited {
   color: #9b54de;
-}
-
-a:hover {
-  background-color: #fff;
-  transition: 0.5s;
 }
 
 .link {
