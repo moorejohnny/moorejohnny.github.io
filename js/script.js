@@ -1,5 +1,11 @@
-$(document).ready(() => {
+// Function to remove preload class
+window.addEventListener('load', () => {
+  const preload = document.querySelector('.preload');
+  preload.classList.add('preload-finish');
+});
 
+
+$(document).ready(() => {
   /* sticky navbar */
   window.onscroll = function() {myFunction()};
 
