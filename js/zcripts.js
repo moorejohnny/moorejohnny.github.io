@@ -20,7 +20,7 @@ var geometry = new THREE.BoxGeometry( 1, 1, 1);
 var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 
 // Background Color
-renderer.setClearColor(0x101010);
+renderer.setClearColor(0x050505);
 
 // Controls // TEMP
 var controls = new THREE.OrbitControls(camera, renderer.domElement);

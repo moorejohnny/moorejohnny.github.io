@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Monsieur La Doulaise', cursive;
+  /* font-family: 'Monsieur La Doulaise', cursive; */
   padding: 0;
   margin: 0;
 }
@@ -23,11 +23,7 @@ h1 {
   font-size: 1em;
   font-weight: 200;
   color: #939393;
-  background-color: #101010;
-  /*
-  background-color: #ffe6d7;
-  background-image: linear-gradient(62deg, #e2e2e2 0%, #f6f6f6 100%);
-  */
+  background-color: #050505;
   display: flex;
   justify-content: center;
   align-items: center;
