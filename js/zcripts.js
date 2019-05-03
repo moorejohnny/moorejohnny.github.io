@@ -9,7 +9,7 @@ var scene = new THREE.Scene();
 
 // Create a new Perspective Camera
 var camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight, 1.0, 1000);
-camera.position.z = 250;
+camera.position.z = 180;
 
 // Create Full Screen WebGL renderer
 var renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
@@ -38,18 +38,25 @@ window.addEventListener('resize', () => {
 })
 
 // Light sources
-var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(29, 76%, 78%)'), 1.0);
-keyLight.position.set(-100, 0, 100);
+var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(196, 36%, 86%)'), 0.7); //'hsl(42, 53%, 79%)'
+keyLight.position.set(-50, 0, 100);
 
 var fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 89%, 81%)'), 0.75);
 fillLight.position.set(100, 0, 100);
 
-var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
+var backLight = new THREE.DirectionalLight('hsl(46, 100%, 92%)', 0.7); //'hsl(240, 89%, 81%)'
 backLight.position.set(100, 0, -100).normalize();
 
+var ambLight = new THREE.AmbientLight( 0x404040 ); // soft white light
+
+var pointLight = new THREE.PointLight('hsl(271, 100%, 50%)', 0.9, 100 ); //0x4722b0
+pointLight.position.set( -100, 0, 50 );
+
 scene.add(keyLight);
-scene.add(fillLight);
+//scene.add(fillLight);
 scene.add(backLight);
+scene.add(ambLight);
+scene.add(pointLight);
 
 var myObj;
 
@@ -64,7 +71,7 @@ mtlLoader.load('statue.mtl', function(materials) {
   //objLoader.setMaterials(materials);
   objLoader.setPath('./zources/');
   objLoader.load('statue.obj', function(object) {
-    object.position.z -= 30;
+    object.position.z += 0;
     object.position.y -= 100;
     object.rotateX(-Math.PI/2);
     scene.add(object);
