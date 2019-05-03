@@ -469,7 +469,6 @@ a:visited {
 /*/*/*/*/*/*/*/*/*/*/* FOR TEST PAGE */*/*/*/*/*/*/*/*/*/*/
 
 .p-test {
-  font-weight: 100;
   padding-top: 5px;
   animation: hover 2s ease-in-out infinite alternate;
   color: mediumseagreen;
@@ -515,18 +514,19 @@ a:visited {
 
 
 .title-test {
-  font-size: 1.6em;
-  letter-spacing: 5px;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 7px;
   position: relative;
   display: flex;
   justify-content: center;
   padding-top: 40vh;
-  font-family: 'Arial Black', sans-serif; /* 'Arial Black' */
+  font-family: 'Roboto Condensed', sans-serif; /* 'Arial Black' */
   pointer-events: none;
 }
 
 .footer-test {
-  color: #f4f4f4;
+  color: #e8e6e6;
   padding-top: 30vh;
 }
 
