@@ -74,6 +74,7 @@ mtlLoader.load('statue.mtl', function(materials) {
     object.position.z += 0;
     object.position.y -= 100;
     object.rotateX(-Math.PI/2);
+    
     scene.add(object);
 
   });
