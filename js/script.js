@@ -1,8 +1,11 @@
+
+// COMMENT OUT FOR TESTING DROP BOX
+// // //
 // Function to remove preload class
-window.addEventListener('load', () => {
-  const preload = document.querySelector('.preload');
-  preload.classList.add('preload-finish');
-});
+//window.addEventListener('load', () => {
+//  const preload = document.querySelector('.preload');
+//  preload.classList.add('preload-finish');
+//});
 
 
 $(document).ready(() => {
