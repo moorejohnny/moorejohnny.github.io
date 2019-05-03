@@ -9,7 +9,7 @@ var scene = new THREE.Scene();
 
 // Create a new Perspective Camera
 var camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight, 1.0, 1000);
-camera.position.z = 300;
+camera.position.z = 250;
 
 // Create Full Screen WebGL renderer
 var renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
@@ -27,6 +27,7 @@ var controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.campingFactor = 0.25;
 controls.enableZoom = false;
+controls.enablePan = false;
 
 // Code for responsiveness and resizing
 window.addEventListener('resize', () => {
@@ -37,10 +38,10 @@ window.addEventListener('resize', () => {
 })
 
 // Light sources
-var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(30, 100%, 75%)'), 1.0);
+var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(29, 76%, 78%)'), 1.0);
 keyLight.position.set(-100, 0, 100);
 
-var fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 100%, 75%)'), 0.75);
+var fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 89%, 81%)'), 0.75);
 fillLight.position.set(100, 0, 100);
 
 var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -64,7 +65,8 @@ mtlLoader.load('statue.mtl', function(materials) {
   objLoader.setPath('./zources/');
   objLoader.load('statue.obj', function(object) {
     object.position.z -= 30;
-
+    object.position.y -= 100;
+    object.rotateX(-Math.PI/2);
     scene.add(object);
 
   });
@@ -77,8 +79,8 @@ var animate = function() {
   requestAnimationFrame(animate);
 
   // Rotate the objects indefinitely
-  //myObj.rotation.z -= .01;
-  //contols.update();
+  //geometry.rotation.z -= .01;
+  controls.update();
 
   renderer.render(scene, camera);
 }
