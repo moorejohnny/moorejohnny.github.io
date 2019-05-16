@@ -74,7 +74,7 @@ mtlLoader.load('statue.mtl', function(materials) {
     object.position.z += 0;
     object.position.y -= 100;
     object.rotateX(-Math.PI/2);
-    
+
     scene.add(object);
 
   });
@@ -87,7 +87,7 @@ var animate = function() {
   requestAnimationFrame(animate);
 
   // Rotate the objects indefinitely
-  //geometry.rotation.z -= .01;
+  //myObj.rotation.z -= .01;
   controls.update();
 
   renderer.render(scene, camera);
