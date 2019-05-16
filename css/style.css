@@ -643,7 +643,6 @@ a:visited {
 
 .demo {
   padding-top: 10px;
-  padding-right: 40px;
   padding-bottom: 20px;
 }
 
@@ -797,19 +796,16 @@ a:visited {
   .wrapper {
     max-width: 100%;
     margin: 0 auto;
-  }
-
-  .wrapper>div {
-    padding: 1em;
-    color: #d9480f;
-  }
-
-  .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     padding-bottom: 25px;
+  }
+
+  .wrapper>div {
+    padding: 1em;
+    color: #d9480f;
   }
 
   .wrapper-2 {
@@ -818,6 +814,11 @@ a:visited {
     grid-gap: 20px;
     grid-auto-rows: minmax(100px, auto);
     padding-bottom: 25px;
+  }
+
+
+  .demo {
+    padding-right: 40px;
   }
 
   .one,
