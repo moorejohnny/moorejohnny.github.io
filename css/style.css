@@ -633,24 +633,18 @@ a:visited {
   font-size: 12px;
 }
 
-.pronto {
-  padding-bottom: 30px;
-}
-
-.statue {
-  padding-bottom: 30px;
-}
-
-.coyote {
-  padding-bottom: 30px;
-}
-
 .highlight {
   transition: 0.3s;
 }
 
 .highlight:hover {
   opacity: 0.6;
+}
+
+.demo {
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 20px;
 }
 
 
