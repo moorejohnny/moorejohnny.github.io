@@ -645,6 +645,10 @@ a:visited {
   padding-bottom: 30px;
 }
 
+.highlight {
+  transition: 0.3s;
+}
+
 .highlight:hover {
   opacity: 0.6;
 }
@@ -820,6 +824,12 @@ a:visited {
     grid-gap: 20px;
     grid-auto-rows: minmax(100px, auto);
     padding-bottom: 25px;
+  }
+
+  .one,
+  .two,
+  .three {
+    padding-bottom: 30px;
   }
 
   .one {
