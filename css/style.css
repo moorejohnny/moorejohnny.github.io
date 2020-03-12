@@ -107,6 +107,7 @@ section {
 }
 
 html {
+  scroll-behavior: smooth;
   line-height: 1
 }
 
