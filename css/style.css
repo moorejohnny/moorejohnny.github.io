@@ -257,7 +257,7 @@ section.home-text{
     font-size: 3rem;
     padding-top: 3%;
     padding-left: 3%;
-    padding-right: 0.3%;
+
   }
   .navbox{
     padding-top: 10%;
@@ -273,6 +273,9 @@ section.home-text{
   a.insta{
     font-size: 1.3rem;
   }
+  .container{
+    padding-left: 2%;
+  }
 
 }
 
@@ -280,8 +283,8 @@ section.home-text{
   span {
     font-size: 3rem;
     padding-top: 3%;
-    padding-left: 3%;
-    padding-right: 0.3%;
+    padding-left: 2%;
+    padding: 0.4%;
   }
   .navbox{
     padding-top: 10%;
