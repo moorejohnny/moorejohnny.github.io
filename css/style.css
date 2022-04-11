@@ -180,9 +180,9 @@ a.bl:hover{
 
 
 
-
-
-
+video::-webkit-media-controls {
+  display: none;
+}
 
 p.fav{
   padding-top: 2%;
