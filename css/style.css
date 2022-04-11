@@ -178,11 +178,10 @@ a.bl:hover{
 
 
 
-
-
 video::-webkit-media-controls {
-  display: none;
+  display:none !important;
 }
+
 
 p.fav{
   padding-top: 2%;
