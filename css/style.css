@@ -16,6 +16,7 @@ nav{
 
 div.center {
   text-align: center;
+  padding-left: 1%;
 }
 
 h1 {
@@ -39,22 +40,28 @@ h2{
 }
 
 h2.sub{
-  padding-top: 20%;
+  padding-top: 18%;
   text-align: center;
 }
 
-video{
-  padding-bottom: 3%;
+video.wurk{
+  margin-top: -2%;
+  padding-right: 1%;
+  padding-bottom: 0%;
+}
+
+video::-webkit-media-controls-enclosure {
+  display:none !important;
 }
 
 .text-box{
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 p{
   font-size: 2rem;
   font-weight: 400;
-  padding-top: 25%;
+  padding-top: 22%;
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -103,6 +110,7 @@ a:hover{
   object-fit: fill;
   z-index: 10;
 }
+
 
 .insta{
   color: #f58529;
@@ -169,6 +177,17 @@ a.lm:hover{
 a.bl:hover{
   color: #A37774;
   text-shadow: 2px 2px #22614c;
+}
+
+
+.dl{
+  color: #eb6f28;
+  position: relative;
+}
+
+a.dl:hover{
+  color: rgb(169,136,47);
+  text-shadow: 2px 2px rgb(104, 85, 32);
 }
 
 
@@ -263,6 +282,10 @@ section.home-text{
   }
   p{
     padding-top: 50%;
+  }
+
+  video.wurk{
+    margin-bottom: -5%;
   }
 
   h2.sub{
